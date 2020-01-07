@@ -1,0 +1,13 @@
+.Logo {
+  width: 150px;
+  height: 150px;
+  border: #60ab9a 2px solid;
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: +2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
