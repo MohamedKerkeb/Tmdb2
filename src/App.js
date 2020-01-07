@@ -10,6 +10,7 @@ import Contenue from "./components/Contenue/Contenue";
 
 // Css
 import "./App.css";
+import Burger from "./components/Menu/Burger/Burger";
 
 // Constance APiKey and Url
 const API_KEY = "bbd2542b8c37690c53dab4cb39912bb8";
@@ -20,6 +21,11 @@ const URL_GENRE = `https://api.themoviedb.org/3/genre/tv/list?language=en-US&api
 
 function App() {
   // Use State
+
+  // Menu burger
+  const [open, setOpen] = useState(false);
+
+  // Fecth
   const [series, setSeries] = useState([]);
   const [sLoad, setSload] = useState(false);
 
@@ -36,7 +42,8 @@ function App() {
   return (
     <div className="App">
       <div className="Left">
-        <Menu />
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} setOpen={setOpen} />
       </div>
       <div className="Right">
         <Header />

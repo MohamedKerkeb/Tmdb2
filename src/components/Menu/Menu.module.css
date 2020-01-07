@@ -2,7 +2,24 @@
   background-color: #fff;
   height: 100vh;
   width: 250px;
+  text-align: left;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.noOpen {
+  transform: translateX(-100);
+}
+
+@media only screen and (max-width: 600px) {
+  .MenuWrapper {
+    transform: translateX(-100);
+  }
 }

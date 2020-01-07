@@ -5,12 +5,20 @@
 }
 
 .App {
-  text-align: center;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 7fr;
   color: #212121;
+  height: 100%;
+  width: 100%;
 }
 
 .Left {
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    background-color: deepskyblue;
+    grid-template-columns: 1fr;
+  }
 }
