@@ -1,9 +1,9 @@
 .Title {
-    font-size: 1.2rem;
-    color: deeppink;
-    cursor: pointer;
+  font-size: 1.2rem;
+  color: #ff9fb2;
+  cursor: pointer;
 }
 
 .Title:hover {
-    color: deepskyblue;
+  color: #0acdff;
 }

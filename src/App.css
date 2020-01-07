@@ -7,16 +7,10 @@
 .App {
   text-align: center;
   display: grid;
-<<<<<<< HEAD
-  grid-template-rows: 1fr 1fr 1fr;
-  /* grid-template-columns: 1fr 10fr 1fr; */
-=======
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 7fr;
   color: #212121;
->>>>>>> 673ac151fc787fbcb05999981bdb1b043dd851c0
 }
 
 .Left {
-
 }

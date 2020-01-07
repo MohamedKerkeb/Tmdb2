@@ -1,7 +1,7 @@
-import React, {useState, useEffect } from "react";
-import Axios from 'axios'
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 
-import { Switch, Link, Route} from 'react-router-dom'
+import { Switch, Link, Route } from "react-router-dom";
 
 // Component and Element
 import Header from "./components/Header/Header";
@@ -18,40 +18,30 @@ const URL_MOVIE = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}
 const URL_UPCOMING = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=fr&page=1`;
 const URL_GENRE = `https://api.themoviedb.org/3/genre/tv/list?language=en-US&api_key=${API_KEY}`;
 
-
-
-
 function App() {
-
   // Use State
   const [series, setSeries] = useState([]);
-  const [sLoad, setSload] = useState(false)
+  const [sLoad, setSload] = useState(false);
 
   // Use Effect
   useEffect(() => {
     const getSeries = async () => {
       const serie = await Axios.get(URL_TV);
       setSeries(serie.data);
-      setSload(true)
+      setSload(true);
     };
-    getSeries()
-  }, [])
-console.log(sLoad)
+    getSeries();
+  }, []);
+  console.log(sLoad);
   return (
     <div className="App">
-<<<<<<< HEAD
-      <Menu />
-      <Header />
-      <Contenue />
-=======
       <div className="Left">
         <Menu />
       </div>
       <div className="Right">
         <Header />
-        <Contenue series={series} sLoad={sLoad}/>
+        <Contenue series={series} sLoad={sLoad} />
       </div>
->>>>>>> 673ac151fc787fbcb05999981bdb1b043dd851c0
     </div>
   );
 }
