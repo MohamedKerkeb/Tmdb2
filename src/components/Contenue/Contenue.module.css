@@ -1,5 +1,17 @@
 .ContenueWrapper {
-  background-color: cadetblue;
+  background-color: #aab5bb;
   height: 100%;
   width: 100%;
+  border-radius: 20px 0 0 0 ;
+}
+
+.CardWrrapper {
+  /* border: 1px solid red; */
+  height: 40vh;
+  width: 1400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
