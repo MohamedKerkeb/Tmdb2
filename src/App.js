@@ -7,8 +7,8 @@ import Contenue from "./components/Contenue/Contenue";
 function App() {
   return (
     <div className="App">
-      <Header />
       <Menu />
+      <Header />
       <Contenue />
     </div>
   );
