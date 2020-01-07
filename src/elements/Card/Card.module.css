@@ -1,0 +1,16 @@
+.CardWrapper{
+    /* border: 1px dashed #212121; */
+    /* background-color: darkturquoise;  */
+    /* margin: 20px; */
+    width: 200px;
+    height: auto;
+}
+
+.Card{
+    /* border: 1px solid rebeccapurple; */
+    /* margin: 10px ; */
+    /* padding: 10px; */
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+}
